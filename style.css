@@ -1,0 +1,186 @@
+body {
+  width: 80%;
+  margin: 0 auto;
+}
+
+body .btn--all--wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body .btn--all--wrap .btn {
+  margin: 30px 0;
+  font-weight: bold;
+  height: 40px;
+  width: 200px;
+  border: 4px black solid;
+  background-color: lightblue;
+  -webkit-transition: all 800ms 0s ease;
+  transition: all 800ms 0s ease;
+}
+
+body .btn--all--wrap .btn::before, body .btn--all--wrap .btn::after {
+  position: absolute;
+  z-index: -1;
+  display: block;
+  content: "";
+  -webkit-transition: all 3s;
+  transition: all 3s;
+}
+
+body .btn--all--wrap .btn1:hover {
+  background-color: #52f052;
+}
+
+body .btn--all--wrap .btn2:hover {
+  background-color: #fff;
+  color: lime;
+  border: lime 2px solid;
+}
+
+body .btn--all--wrap .btn3 {
+  position: relative;
+  z-index: 2;
+  background-color: magenta;
+}
+
+body .btn--all--wrap .btn3:hover {
+  border-color: #59b1eb;
+  color: #59b1eb;
+}
+
+body .btn--all--wrap .btn3::before, body .btn--all--wrap .btn3::after {
+  position: absolute;
+  top: 0%;
+  width: 50%;
+  height: 100%;
+  background-color: lime;
+}
+
+body .btn--all--wrap .btn3::before {
+  right: 0;
+}
+
+body .btn--all--wrap .btn3::after {
+  left: 0;
+}
+
+body .btn--all--wrap .btn3:hover::before, body .btn--all--wrap .btn3:hover::after {
+  width: 0;
+  background-color: #0f327e;
+}
+
+body .btn--all--wrap .btn4 {
+  position: relative;
+  z-index: 2;
+  background-color: #333;
+}
+
+body .btn--all--wrap .btn4:hover {
+  background-color: #fff;
+}
+
+body .btn--all--wrap .btn4:hover::before, body .btn--all--wrap .btn4:hover::after {
+  height: 0;
+  background-color: #59b1eb;
+}
+
+body .btn--all--wrap .btn4::before, body .btn--all--wrap .btn4::after {
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background-color: #333;
+}
+
+body .btn--all--wrap .btn4::before {
+  top: 0;
+}
+
+body .btn--all--wrap .btn4::after {
+  bottom: 0;
+}
+
+body .btn--all--wrap .btn5:hover {
+  letter-spacing: 6px;
+}
+
+body .btn--all--wrap .btn6:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+body .btn--all--wrap .btn7:hover {
+  border: 4px red dashed;
+}
+
+body .btn--all--wrap .btn8 {
+  position: relative;
+  z-index: 3;
+}
+
+body .btn--all--wrap .btn8::after {
+  width: 186px;
+  height: 26px;
+  top: 3px;
+  left: 2px;
+  z-index: 5;
+  border: salmon 2px solid;
+  opacity: 0;
+}
+
+body .btn--all--wrap .btn8:hover::after {
+  opacity: 1;
+}
+
+body .btn--all--wrap .btn9 {
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+}
+
+body .btn--all--wrap .btn9:hover {
+  color: seagreen;
+}
+
+body .btn--all--wrap .btn9:hover::after {
+  bottom: 0;
+  top: 0%;
+  background-color: #2ab841;
+}
+
+body .btn--all--wrap .btn9::after {
+  bottom: -100%;
+  top: -100%;
+  width: 100%;
+  height: 100%;
+}
+
+body .btn--all--wrap .btn10 {
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+}
+
+body .btn--all--wrap .btn10:hover::after {
+  top: 0;
+  left: 0;
+  background-color: #ff1111;
+}
+
+body .btn--all--wrap .btn10::after {
+  top: -100%;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+}
+/*# sourceMappingURL=style.css.map */
